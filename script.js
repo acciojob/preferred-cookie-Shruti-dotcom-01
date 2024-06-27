@@ -10,7 +10,7 @@ document.getElementById("myForm").addEventListener("submit", (e) =>{
 })
 
 let cookies = Object.fromEntries(
-	document.cookie.split("; "),
+	document.cookie.split("; ").
 	map((item) => item.split("=")));
 
 document.getElementById("fontsize").value = cookies.fontsize??0;
